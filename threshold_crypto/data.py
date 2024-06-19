@@ -64,7 +64,7 @@ class ThresholdDataClass:
             if _is_ecc_point_list(val):
                 data_dict[k] = [_ecc_point_to_serializable(p) for p in val]
 
-        return json.dumps(data_dict)
+        return data_dict
 
     @classmethod
     def from_json(cls, json_str: str):
